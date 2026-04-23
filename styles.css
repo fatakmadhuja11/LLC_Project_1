@@ -1,0 +1,113 @@
+/* Modern and Attractive UI Design */
+
+/* Gradient background */
+body {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Centered container */
+.container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Clean typography for heading */
+header h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input fields, dropdown, and date picker */
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+/* Buttons */
+button {
+    background-color: #4e54c8;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #8f94fb;
+    transform: scale(1.05);
+}
+
+/* Task items as cards */
+.task-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* Priority color coding */
+.priority-high {
+    color: #ff4d4d;
+}
+
+.priority-medium {
+    color: #ffa500;
+}
+
+.priority-low {
+    color: #4caf50;
+}
+
+/* Completed tasks */
+.task-card.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Stats section */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .task-input, .task-filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dashboard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .task-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

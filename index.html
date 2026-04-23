@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart To-Do List Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart To-Do List Pro</h1>
+            <div class="dashboard">
+                <div>Total Tasks: <span id="total-tasks">0</span></div>
+                <div>Completed: <span id="completed-tasks">0</span></div>
+                <div>Pending: <span id="pending-tasks">0</span></div>
+                <div>Productivity Score: <span id="productivity-score">0%</span></div>
+                <div>Daily Streak: <span id="daily-streak">0</span></div>
+            </div>
+        </header>
+        <main>
+            <section class="task-input">
+                <input type="text" id="task-name" placeholder="Task name">
+                <select id="task-priority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <input type="date" id="task-due-date">
+                <button id="add-task">Add Task</button>
+            </section>
+            <section class="task-filters">
+                <button data-filter="all">All</button>
+                <button data-filter="pending">Pending</button>
+                <button data-filter="completed">Completed</button>
+                <input type="text" id="search-tasks" placeholder="Search tasks">
+            </section>
+            <section class="task-list" id="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
